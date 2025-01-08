@@ -60,22 +60,23 @@
 <div class="relative snap-start">
   <img
     src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-    class="w-full h-screen object-cover"
+    class="w-full h-screen object-cover transition-transform duration-1000 ease-in-out transform hover:scale-110"
     alt="Example Image"/>
-  
+
   <div
-    class="absolute inset-0 flex flex-col items-center justify-center text-white"
+    class="absolute inset-0 flex flex-col items-center justify-center text-white opacity-0 transition-opacity duration-1000 ease-in-out hover:opacity-100"
     style="background: rgba(0, 0, 0, 0.5); text-align: center; padding: 20px;">
     
     <h1 class="font-bold mb-4"
       style="font-size: clamp(1.5rem, 4vw, 2.5rem); max-width: 90%; word-wrap: break-word;">We Love To Build WordPress</h1>
     
-    <button class="px-6 py-2 text-white font-semibold rounded"
+    <button class="px-6 py-2 text-white font-semibold rounded transition-transform duration-300 ease-in-out transform hover:scale-110"
       style="background-color: #3b82f6; border: none; font-size: 1rem; padding: 10px 20px; border-radius: 5px; cursor: pointer;"
       onmouseover="this.style.backgroundColor='#2563eb'"
       onmouseout="this.style.backgroundColor='#3b82f6'">Watch Video</button>
   </div>
 </div>
+
 
 
 
