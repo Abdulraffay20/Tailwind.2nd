@@ -8,19 +8,20 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <head>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    </head>
-    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+</head>  
 </head>
 
 <body> 
 
   
-  <nav class="flex items-center justify-between px-4 py-2 bg-gray-200 fixed top-0 left-0 w-full z-50 shadow-md">
+  <nav class="flex items-center justify-between px-4 py-2 bg-gray-200 fixed top-0 left-0 w-full z-50 shadow-md" data-aos="fade-down" >
     <!-- Brand Logo -->
     <a class="text-3xl font-bold" href="#">Create</a>
 
     <!-- Mobile Menu Button -->
-    <button id="menu-toggle" class="md:hidden text-3xl focus:outline-none mr-28">
+    <button id="menu-toggle" class="md:hidden text-3xl focus:outline-none mr-18">
         ☰
     </button>
 
@@ -35,19 +36,20 @@
     </div>
 </nav>
 
-<!-- Mobile Menu -->
-<div id="mobile-menu" class="hidden fixed top-14 left-0 w-full bg-gray-200 shadow-md flex-col items-start p-4 space-y-6 md:hidden z-40">
-    <a class="text-xl hover:text-blue-500 font-sans mr-2" href="#">Home</a>
-    <a class="text-xl hover:text-blue-500 font-sans mr-2" href="#">Work</a>
-    <a class="text-xl hover:text-blue-500 font-sans mr-2" href="#">Services</a>
-    <a class="text-xl hover:text-blue-500 font-sans mr-2" href="#">About</a>
-    <a class="text-xl hover:text-blue-500 font-sans mr-2" href="#">Blog</a>
-    <a class="text-xl hover:text-blue-500 font-sans mr-2" href="#">Contact</a>
+<!-- Mobile Menu with AOS Animation -->
+<div id="mobile-menu" class="hidden fixed top-14 left-0 w-full bg-gray-200 shadow-md flex flex-col items-center p-4 space-y-4 md:hidden z-40" data-aos="zoom-in" data-aos-duration="300" data-aos-delay="200">
+  <a class="text-xl hover:text-blue-500 font-sans" href="#">Home</a>
+  <a class="text-xl hover:text-blue-500 font-sans" href="#">Work</a>
+  <a class="text-xl hover:text-blue-500 font-sans" href="#">Services</a>
+  <a class="text-xl hover:text-blue-500 font-sans" href="#">About</a>
+  <a class="text-xl hover:text-blue-500 font-sans" href="#">Blog</a>
+  <a class="text-xl hover:text-blue-500 font-sans" href="#">Contact</a>
 </div>
 
 
+
  
-<div class="relative snap-start">
+<div class="relative snap-start" data-aos="fade-down" data-aos-duration="1000">
   <img
     src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     class="w-full h-screen object-cover transition-transform duration-1000 ease-in-out transform hover:scale-110"
@@ -69,7 +71,7 @@
 
 
 
-  <div class="flex flex-wrap justify-center gap-6 px-6 lg:px-24 pt-6 mt-10">
+  <div class="flex flex-wrap justify-center gap-6 px-6 lg:px-24 pt-6 mt-10" data-aos="zoom-in" data-aos-duration="900">
     <div class="bg-white shadow-lg rounded-lg p-6 max-w-xs text-center ">
       <h1 class="text-2xl font-bold mb-4 border-b pb-2 font-sans">Innovate</h1>
       <p class="text-justify font-serif">
@@ -93,8 +95,8 @@
   </div>
 
 
-  <div class="text-center pt-16">
-    <h1 class="text-black font-bold text-3xl  font-sans">Our Works</h1>
+  <div class="text-center pt-16" data-aos="zoom-in">
+    <h1 class="text-black font-bold text-4xl  font-sans">Our Works</h1>
     <p class="font-normal pt-4 font-serif">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, itaque neque, <br> delectus odio iure explicabo.</p>
   </div>
 
@@ -163,7 +165,7 @@
   </div>
   
   
-  <div class="bg-black mt-20 max-w-6xl mx-auto p-6 pt-12 rounded-lg flex flex-wrap items-center justify-between">
+  <div class="bg-black mt-20 max-w-6xl mx-auto p-6 pt-12 rounded-lg flex flex-wrap items-center justify-between"  data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
     <!-- Left Image -->
     <div class="w-full md:w-1/2 p-4">
         <img 
@@ -203,41 +205,41 @@
 
 <div class="bg-gray-100 p-8 mt-10">
   <!-- Main Heading -->
-  <h1 class="text-3xl font-bold text-center mb-12 pt-4 font-sans">Our Services</h1>
+  <h1 class="text-4xl font-bold text-center mb-12 pt-4 font-sans">Our Services</h1>
   <!-- Service Blocks -->
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">    
     <!-- First Service -->
-    <div class="p-6 bg-white shadow-lg rounded-lg text-center">
+    <div class="p-6 bg-white shadow-lg rounded-lg text-center"data-aos="flip-right" data-aos-duration="2000">
       <h3 class="font-bold text-xl mb-2 font-sans">Web Design</h3>
       <p class="text-gray-600 mb-4 font-serif">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
       <button class="underline text-blue-500 hover:text-blue-600 font-serif">Read More</button>
     </div>   
     <!-- Second Service -->
-    <div class="p-6 bg-white shadow-lg rounded-lg text-center">
+    <div class="p-6 bg-white shadow-lg rounded-lg text-center" data-aos="zoom-in-down"  data-aos-duration="2000">
       <h3 class="font-bold text-xl mb-2 font-sans">eCommerce</h3>
       <p class="text-gray-600 mb-4 font-serif">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
       <button class="underline text-blue-500 hover:text-blue-600 font-serif">Read More</button>
     </div>   
     <!-- Third Service -->
-    <div class="p-6 bg-white shadow-lg rounded-lg text-center">
+    <div class="p-6 bg-white shadow-lg rounded-lg text-center" data-aos="flip-left"  data-aos-duration="2000">
       <h3 class="font-bold text-xl mb-2 font-sans">Web Applications</h3>
       <p class="text-gray-600 mb-4 font-serif">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
       <button class="underline text-blue-500 hover:text-blue-600 font-serif">Read More</button>
     </div>   
     <!-- Fourth Service -->
-    <div class="p-6 bg-white shadow-lg rounded-lg text-center">
+    <div class="p-6 bg-white shadow-lg rounded-lg text-center" data-aos="flip-right"  data-aos-duration="2000">
       <h3 class="font-bold text-xl mb-2 font-sans">Branding</h3>
       <p class="text-gray-600 mb-4 font-serif">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
       <button class="underline text-blue-500 hover:text-blue-600 font-serif">Read More</button>
     </div>    
     <!-- Fifth Service -->
-    <div class="p-6 bg-white shadow-lg rounded-lg text-center">
+    <div class="p-6 bg-white shadow-lg rounded-lg text-center" data-aos="zoom-in-down"  data-aos-duration="2000">
       <h3 class="font-bold text-xl mb-2 font-sans">Copy Writing</h3>
       <p class="text-gray-600 mb-4 font-serif">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
       <button class="underline text-blue-500 hover:text-blue-600 font-serif">Read More</button>
     </div>   
     <!-- Sixth Service -->
-    <div class="p-6 bg-white shadow-lg rounded-lg text-center">
+    <div class="p-6 bg-white shadow-lg rounded-lg text-center" data-aos="flip-left" data-aos-duration="2000">
       <h3 class="font-bold text-xl mb-2 font-sans">Mobile Applications</h3>
       <p class="text-gray-600 mb-4 font-serif">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
       <button class="underline text-blue-500 hover:text-blue-600 font-serif">Read More</button>
@@ -248,7 +250,7 @@
   
 <div class="p-8 max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-8 mt-12 border-t-2 border-black-300">
   <!-- Left Section -->
-  <div class="w-full md:w-2/3 space-y-6 text-center md:text-left">
+  <div class="w-full md:w-2/3 space-y-6 text-center md:text-left" data-aos="flip-right" data-aos-duration="2000">
     <div>
       <h1 class="font-bold text-3xl mb-4 font-sans">About Us</h1>
       <p class="text-gray-700 text-lg leading-relaxed font-serif">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Eveniet incidunt magnam corrupti, odit eos harum quaerat <br> nostrum voluptatibus aspernatur eligendi accusantium <br> cum, impedit blanditiis voluptate commodi doloribus, nemo <br> dignissimos recusandae.</p>
@@ -270,7 +272,7 @@
     </div>
   </div>
   <!-- Right Image Section -->
-  <div class="w-full md:w-1/2 pl-0 md:pl-8">
+  <div class="w-full md:w-1/2 pl-0 md:pl-8" data-aos="flip-left" data-aos-duration="2000">
     <img src="https://preview.colorlib.com/theme/create/images/about_1.jpg" alt="About Us Image" class="w-full rounded-lg shadow-md">
   </div>
 </div>
@@ -278,11 +280,11 @@
   
 
   <div class="p-8">
-    <h1 class="font-bold text-3xl text-center mb-8 mt-14 font-sans">Our Team</h1>
+    <h1 class="font-bold text-4xl text-center mb-8 mt-14 font-sans" data-aos="zoom-in" data-aos-duration="3000">Our Team</h1>
     <!-- Team Members -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center" data-aos="fade-up" data-aos-duration="3000">
       <!-- Member 1 -->
-      <div class="text-center">
+      <div class="text-center" >
         <img src="https://preview.colorlib.com/theme/create/images/person_2.jpg" class="w-40 rounded-full mx-auto mb-4" alt="John Rooster">
         <h2 class="font-semibold text-xl font-sans">John Rooster</h2>
         <h6 class="text-gray-600 font-serif">Co-Founder, President</h6>
@@ -346,15 +348,15 @@
       </div>
     </div>
   </div>
-  
+
 
    
   <div class="border-t-2 border-black-300 py-8 pt-12 mt-24">
     <!-- Blog Heading Center -->
     <div class="text-center mb-8">
-      <h1 class="text-3xl font-bold font-sans">Blog</h1>
+      <h1 class="text-4xl font-bold font-sans" data-aos="zoom-in" data-aos-duration="3000">Blog</h1>
     </div> 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center px-4 md:px-16 pt-16">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center px-4 md:px-16 pt-16" data-aos="fade-down" data-aos-duration="3000">
       <!-- First Blog Item -->
       <div class="text-center max-w-sm">
         <img src="https://preview.colorlib.com/theme/create/images/img_1.jpg" class="w-full h-auto rounded-lg mb-4" alt="Blog Image 1">
@@ -381,14 +383,14 @@
 
 
 
-  <div class="bg-gray-100 p-8 mt-20">
+  <div class="bg-gray-100 p-8 mt-20" style="background-image: url('https://w0.peakpx.com/wallpaper/419/442/HD-wallpaper-simple-gray-abstract-background-abstract-gray-simple-background-abstract.jpg'); background-size: cover; background-position: center; background-attachment: fixed;">
     <div class="text-center mb-12 mt-10">
-      <h1 class="text-4xl font-bold font-sans">Contact Us</h1>
+      <h1 class="text-4xl font-bold font-sans text-white" data-aos="zoom-in" data-aos-duration="3000">Contact Us</h1>
     </div>
     
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mx-auto max-w-6xl">
       <!-- Left Side: Contact Form -->
-      <div class="bg-white p-10 rounded-lg shadow-md md:max-w-2xl mx-auto mt-6 font-sans">
+      <div class="bg-white p-10 rounded-lg shadow-md md:max-w-2xl mx-auto mt-6 font-sans" data-aos="zoom-in" data-aos-duration="3000">
         <h3 class="text-xl font-semibold mb-4 text-center md:text-left">Contact Form</h3>
         <form>
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
@@ -417,12 +419,12 @@
         </form>
       </div>
     </div>
-  </div>
-  
-  
+</div>
 
+  
+  
 <!-- Footer Section -->
-<footer class="bg-gray-900 text-white p-10 mt-20">
+<footer class="bg-gray-900 text-white p-10 " data-aos="zoom-in-up" data-aos-duration="2000">
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
     <!-- About Section -->
     <div class="ml-10 text-center md:text-left">
@@ -465,13 +467,16 @@
 </footer>
 
 
-
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script>
+  AOS.init();
+  
+  // Toggle Functionality
   const menuToggle = document.getElementById('menu-toggle');
   const mobileMenu = document.getElementById('mobile-menu');
 
   menuToggle.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
+    mobileMenu.classList.toggle('hidden');
   });
 </script>
 
