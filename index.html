@@ -11,27 +11,21 @@
     </head>
     
 </head>
-<style>
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-      nav {
-          padding-right: 16px;
-          padding-left: 16px;
-      }
 
-      #mobile-menu a {
-          padding: 10px 0;
-      }
-  }
-</style>
 <body> 
-  
 
-  <nav class="flex items-center justify-between px-6 py-2 pt-2 bg-gray-200 fixed top-0 left-0 w-full z-50 shadow-md">
-    <a class="text-4xl font-bold pl-6" href="#">Create</a>
+  
+  <nav class="flex items-center justify-between px-4 py-2 bg-gray-200 fixed top-0 left-0 w-full z-50 shadow-md">
+    <!-- Brand Logo -->
+    <a class="text-3xl font-bold" href="#">Create</a>
+
+    <!-- Mobile Menu Button -->
+    <button id="menu-toggle" class="md:hidden text-3xl focus:outline-none mr-28">
+        ☰
+    </button>
 
     <!-- Desktop Menu -->
-    <div class="hidden md:flex space-x-6 pr-44">
+    <div id="desktop-menu" class="hidden md:flex space-x-6 mr-28">
         <a class="text-xl hover:text-blue-500 font-sans" href="#">Home</a>
         <a class="text-xl hover:text-blue-500 font-sans" href="#">Work</a>
         <a class="text-xl hover:text-blue-500 font-sans" href="#">Services</a>
@@ -39,22 +33,18 @@
         <a class="text-xl hover:text-blue-500 font-sans" href="#">Blog</a>
         <a class="text-xl hover:text-blue-500 font-sans" href="#">Contact</a>
     </div>
-
-    <!-- Mobile Menu Button -->
-    <button id="menu-toggle" class="md:hidden text-2xl focus:outline-none">
-        ☰
-    </button>
 </nav>
 
 <!-- Mobile Menu -->
-<div id="mobile-menu" class="hidden fixed top-14 left-0 w-full bg-gray-200 shadow-md flex-col items-start p-4 space-y-4 md:hidden z-40">
-    <a class="text-xl hover:text-blue-500 font-sans" href="#">Home</a>
-    <a class="text-xl hover:text-blue-500 font-sans" href="#">Work</a>
-    <a class="text-xl hover:text-blue-500 font-sans" href="#">Services</a>
-    <a class="text-xl hover:text-blue-500 font-sans" href="#">About</a>
-    <a class="text-xl hover:text-blue-500 font-sans" href="#">Blog</a>
-    <a class="text-xl hover:text-blue-500 font-sans" href="#">Contact</a>
+<div id="mobile-menu" class="hidden fixed top-14 left-0 w-full bg-gray-200 shadow-md flex-col items-start p-4 space-y-6 md:hidden z-40">
+    <a class="text-xl hover:text-blue-500 font-sans mr-2" href="#">Home</a>
+    <a class="text-xl hover:text-blue-500 font-sans mr-2" href="#">Work</a>
+    <a class="text-xl hover:text-blue-500 font-sans mr-2" href="#">Services</a>
+    <a class="text-xl hover:text-blue-500 font-sans mr-2" href="#">About</a>
+    <a class="text-xl hover:text-blue-500 font-sans mr-2" href="#">Blog</a>
+    <a class="text-xl hover:text-blue-500 font-sans mr-2" href="#">Contact</a>
 </div>
+
 
  
 <div class="relative snap-start">
@@ -76,7 +66,6 @@
       onmouseout="this.style.backgroundColor='#3b82f6'">Watch Video</button>
   </div>
 </div>
-
 
 
 
@@ -102,6 +91,7 @@
       </p>
     </div>
   </div>
+
 
   <div class="text-center pt-16">
     <h1 class="text-black font-bold text-3xl  font-sans">Our Works</h1>
@@ -173,125 +163,118 @@
   </div>
   
   
-  <div 
-  class="bg-black mt-20 max-w-6xl mx-auto flex p-6 pt-12 rounded-lg flex-wrap" 
-  style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;">
-  <!-- Left Image -->
-  <div 
-    class="w-full md:w-1/2" 
-    style="width: 100%; max-width: 50%; padding: 10px;">
-    <img 
-      src="https://preview.colorlib.com/theme/create/images/about_1.jpg.webp" 
-      class="w-full rounded-lg mb-4" 
-      alt="Image"
-      style="border-radius: 10px; max-width: 100%; height: auto;">
-  </div>
-  <!-- Right Content -->
-  <div 
-    class="w-full md:w-1/2 grid gap-6 text-white font-serif" 
-    style="width: 100%; max-width: 50%; display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; padding: 10px;">     
-    <!-- First Block -->
-    <div class="space-y-2" style="margin-bottom: 20px;">
-      <h1 class="font-bold text-xl" style="font-size: 1.25rem;">Strategy</h1>
-      <p class="text-gray-500 leading-relaxed" style="color: #9CA3AF; line-height: 1.6;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ab nihil quam nesciunt</p>
-      <button class="underline text-blue-400 hover:text-blue-300" style="text-decoration: underline; cursor: pointer;">Read More</button>
-    </div> 
-    <!-- Second Block -->
-    <div class="space-y-2" style="margin-bottom: 20px;">
-      <h1 class="font-bold text-xl" style="font-size: 1.25rem;">Art Direction</h1>
-      <p class="text-gray-500 leading-relaxed" style="color: #9CA3AF; line-height: 1.6;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ab nihil quam nesciunt</p>
-      <button class="underline text-blue-400 hover:text-blue-300" style="text-decoration: underline; cursor: pointer;">Read More</button>
-    </div> 
-    <!-- Third Block -->
-    <div class="space-y-2" style="margin-bottom: 20px;">
-      <h1 class="font-bold text-xl" style="font-size: 1.25rem;">Web Development</h1>
-      <p class="text-gray-500 leading-relaxed" style="color: #9CA3AF; line-height: 1.6;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ab nihil quam nesciunt</p>
-      <button class="underline text-blue-400 hover:text-blue-300" style="text-decoration: underline; cursor: pointer;">Read More</button>
-    </div> 
-    <!-- Fourth Block -->
-    <div class="space-y-2" style="margin-bottom: 20px;">
-      <h1 class="font-bold text-xl" style="font-size: 1.25rem;">Copywriting</h1>
-      <p class="text-gray-500 leading-relaxed" style="color: #9CA3AF; line-height: 1.6;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ab nihil quam nesciunt</p>
-      <button class="underline text-blue-400 hover:text-blue-300" style="text-decoration: underline; cursor: pointer;">Read More</button>
+  <div class="bg-black mt-20 max-w-6xl mx-auto p-6 pt-12 rounded-lg flex flex-wrap items-center justify-between">
+    <!-- Left Image -->
+    <div class="w-full md:w-1/2 p-4">
+        <img 
+            src="https://preview.colorlib.com/theme/create/images/about_1.jpg.webp" 
+            class="w-full rounded-lg mb-4" 
+            alt="Image">
     </div>
-  </div>
+     <!-- Right Content -->
+    <div class="w-full md:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-6 p-4 text-white font-serif text-center md:text-left">
+        <!-- First Block -->
+        <div class="space-y-2">
+            <h1 class="font-bold text-xl">Strategy</h1>
+            <p class="text-gray-400 leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ab nihil quam nesciunt</p>
+            <button class="underline text-blue-400 hover:text-blue-300">Read More</button>
+        </div>
+        <!-- Second Block -->
+        <div class="space-y-2">
+            <h1 class="font-bold text-xl">Art Direction</h1>
+            <p class="text-gray-400 leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ab nihil quam nesciunt</p>
+            <button class="underline text-blue-400 hover:text-blue-300">Read More</button>
+        </div>        
+        <!-- Third Block -->
+        <div class="space-y-2">
+            <h1 class="font-bold text-xl">Web Development</h1>
+            <p class="text-gray-400 leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ab nihil quam nesciunt</p>
+            <button class="underline text-blue-400 hover:text-blue-300">Read More</button>
+        </div>        
+        <!-- Fourth Block -->
+        <div class="space-y-2">
+            <h1 class="font-bold text-xl">Copywriting</h1>
+            <p class="text-gray-400 leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ab nihil quam nesciunt</p>
+            <button class="underline text-blue-400 hover:text-blue-300">Read More</button>
+        </div>
+    </div>
 </div>
-
 
 
 <div class="bg-gray-100 p-8 mt-10">
   <!-- Main Heading -->
-  <h1 class="text-3xl font-bold text-center mb-8 pt-12 font-sans">Our Services</h1>
+  <h1 class="text-3xl font-bold text-center mb-12 pt-4 font-sans">Our Services</h1>
   <!-- Service Blocks -->
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">    
     <!-- First Service -->
     <div class="p-6 bg-white shadow-lg rounded-lg text-center">
       <h3 class="font-bold text-xl mb-2 font-sans">Web Design</h3>
       <p class="text-gray-600 mb-4 font-serif">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-      <button class="underline text-green-400 hover:text-green-600 font-serif">Read More</button>
+      <button class="underline text-blue-500 hover:text-blue-600 font-serif">Read More</button>
     </div>   
     <!-- Second Service -->
     <div class="p-6 bg-white shadow-lg rounded-lg text-center">
       <h3 class="font-bold text-xl mb-2 font-sans">eCommerce</h3>
       <p class="text-gray-600 mb-4 font-serif">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-      <button class="underline text-green-400 hover:text-green-600 font-serif">Read More</button>
+      <button class="underline text-blue-500 hover:text-blue-600 font-serif">Read More</button>
     </div>   
     <!-- Third Service -->
     <div class="p-6 bg-white shadow-lg rounded-lg text-center">
       <h3 class="font-bold text-xl mb-2 font-sans">Web Applications</h3>
       <p class="text-gray-600 mb-4 font-serif">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-      <button class="underline text-green-400 hover:text-green-600 font-serif">Read More</button>
+      <button class="underline text-blue-500 hover:text-blue-600 font-serif">Read More</button>
     </div>   
     <!-- Fourth Service -->
     <div class="p-6 bg-white shadow-lg rounded-lg text-center">
       <h3 class="font-bold text-xl mb-2 font-sans">Branding</h3>
       <p class="text-gray-600 mb-4 font-serif">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-      <button class="underline text-green-400 hover:text-green-600 font-serif">Read More</button>
+      <button class="underline text-blue-500 hover:text-blue-600 font-serif">Read More</button>
     </div>    
     <!-- Fifth Service -->
     <div class="p-6 bg-white shadow-lg rounded-lg text-center">
       <h3 class="font-bold text-xl mb-2 font-sans">Copy Writing</h3>
       <p class="text-gray-600 mb-4 font-serif">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-      <button class="underline text-green-400 hover:text-green-600 font-serif">Read More</button>
+      <button class="underline text-blue-500 hover:text-blue-600 font-serif">Read More</button>
     </div>   
     <!-- Sixth Service -->
     <div class="p-6 bg-white shadow-lg rounded-lg text-center">
       <h3 class="font-bold text-xl mb-2 font-sans">Mobile Applications</h3>
       <p class="text-gray-600 mb-4 font-serif">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-      <button class="underline text-green-400 hover:text-green-600 font-serif">Read More</button>
+      <button class="underline text-blue-500 hover:text-blue-600 font-serif">Read More</button>
     </div>
   </div>
 </div>
 
   
-  
-  <div class="p-8 max-w-6xl mx-auto flex items-start gap-8 mt-12 border-t-2 border-black-300">
-    <div class="w-2/3 space-y-6">  
-      <div>
-        <h1 class="font-bold text-3xl mb-4 font-sans">About Us</h1>
-        <p class="text-gray-700 text-lg leading-relaxed font-serif">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Eveniet incidunt magnam corrupti, odit eos harum quaerat <br> nostrum voluptatibus aspernatur eligendi accusantium <br> cum, impedit blanditiis voluptate commodi doloribus, nemo <br> dignissimos recusandae.</p>
+<div class="p-8 max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-8 mt-12 border-t-2 border-black-300">
+  <!-- Left Section -->
+  <div class="w-full md:w-2/3 space-y-6 text-center md:text-left">
+    <div>
+      <h1 class="font-bold text-3xl mb-4 font-sans">About Us</h1>
+      <p class="text-gray-700 text-lg leading-relaxed font-serif">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Eveniet incidunt magnam corrupti, odit eos harum quaerat <br> nostrum voluptatibus aspernatur eligendi accusantium <br> cum, impedit blanditiis voluptate commodi doloribus, nemo <br> dignissimos recusandae.</p>
+    </div>    
+    <!-- Service Sections -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+      <!-- Service Section 1 -->
+      <div class="p-4">
+        <h3 class="font-bold text-xl mb-2 font-sans">Web & Mobile Specialties</h3>
+        <p class="text-gray-600 text-lg mb-4 font-serif">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. <br> Perferendis quis consect.</p>
+        <button class="underline text-blue-500 hover:text-blue-600">Read More</button>
       </div>
-      <!-- Service Sections (in one line) -->
-      <div class="grid grid-cols-2 gap-8">
-        <div class="p-4">
-          <h3 class="font-bold text-xl mb-2 font-sans">Web & Mobile Specialties</h3>
-          <p class="text-gray-600 text-lg mb-4 font-serif">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. <br> Perferendis quis consect.</p>
-          <button class="underline text-green-400 hover:text-green-600">Read More</button>
-        </div>
-        <!-- Service Section 2 -->
-        <div class="p-4">
-          <h3 class="font-bold text-xl mb-2 font-sans">Intuitive Thinkers</h3>
-          <p class="text-gray-600 text-lg mb-4 font-serif">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. <br> Perferendis quis consect.</p>
-          <button class="underline text-green-400 hover:text-green-600 font-serif">Read More</button>
-        </div>
+      <!-- Service Section 2 -->
+      <div class="p-4">
+        <h3 class="font-bold text-xl mb-2 font-sans">Intuitive Thinkers</h3>
+        <p class="text-gray-600 text-lg mb-4 font-serif">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. <br> Perferendis quis consect.</p>
+        <button class="underline text-blue-500 hover:text-blue-600">Read More</button>
       </div>
-    </div> 
-    <!-- Right Image -->
-    <div class="w-1/2 pl-8">
-      <img src="https://preview.colorlib.com/theme/create/images/about_1.jpg" alt="About Us Image" class="w-full rounded-lg shadow-md">
     </div>
   </div>
-  
+  <!-- Right Image Section -->
+  <div class="w-full md:w-1/2 pl-0 md:pl-8">
+    <img src="https://preview.colorlib.com/theme/create/images/about_1.jpg" alt="About Us Image" class="w-full rounded-lg shadow-md">
+  </div>
+</div>
+
   
 
   <div class="p-8">
@@ -371,28 +354,27 @@
     <div class="text-center mb-8">
       <h1 class="text-3xl font-bold font-sans">Blog</h1>
     </div> 
-    <!-- Flex container for responsive images and text -->
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center px-4 md:px-16 pt-16">
       <!-- First Blog Item -->
       <div class="text-center max-w-sm">
         <img src="https://preview.colorlib.com/theme/create/images/img_1.jpg" class="w-full h-auto rounded-lg mb-4" alt="Blog Image 1">
-        <h1 class="text-xl text-green-500 hover:text-green-400 font-sans">Create Beautiful Website In Less Than An Hour</h1>
+        <h1 class="text-xl text-blue-500 hover:text-blue-400 font-sans">Create Beautiful Website In Less Than An Hour</h1>
         <p class="text-gray-700 mt-2 font-serif">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
-        <button class="text-green-500 hover:text-green-400 mt-4 font-serif">Continue Reading</button>
+        <button class="text-blue-500 hover:text-blue-600 mt-4 font-serif">Continue Reading</button>
       </div> 
       <!-- Second Blog Item -->
       <div class="text-center max-w-sm">
         <img src="https://preview.colorlib.com/theme/create/images/img_2.jpg" class="w-full h-auto rounded-lg mb-4" alt="Blog Image 2">
-        <h1 class="text-xl text-green-500 hover:text-green-400 font-sans">Create Beautiful Website In Less Than An Hour</h1>
+        <h1 class="text-xl text-blue-500 hover:text-blue-400 font-sans">Create Beautiful Website In Less Than An Hour</h1>
         <p class="text-gray-700 mt-2 font-serif">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
-        <button class="text-green-500 hover:text-green-400 mt-4 font-serif">Continue Reading</button>
+        <button class="text-blue-500 hover:text-blue-600 mt-4 font-serif">Continue Reading</button>
       </div> 
       <!-- Third Blog Item -->
       <div class="text-center max-w-sm">
         <img src="https://preview.colorlib.com/theme/create/images/img_1.jpg" class="w-full h-auto rounded-lg mb-4" alt="Blog Image 3">
-        <h1 class="text-xl text-green-500 hover:text-green-400 font-sans">Create Beautiful Website In Less Than An Hour</h1>
+        <h1 class="text-xl text-blue-500 hover:text-blue-600 font-sans">Create Beautiful Website In Less Than An Hour</h1>
         <p class="text-gray-700 mt-2 font-serif">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
-        <button class="text-green-500 hover:text-green-400 mt-4 font-serif">Continue Reading</button>
+        <button class="text-blue-500 hover:text-blue-600 mt-4 font-serif">Continue Reading</button>
       </div>
     </div>
   </div>
@@ -403,60 +385,52 @@
     <div class="text-center mb-12 mt-10">
       <h1 class="text-4xl font-bold font-sans">Contact Us</h1>
     </div>
+    
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mx-auto max-w-6xl">
       <!-- Left Side: Contact Form -->
       <div class="bg-white p-10 rounded-lg shadow-md md:max-w-2xl mx-auto mt-6 font-sans">
-        <h3 class="text-xl font-semibold mb-4">Contact Form</h3>
+        <h3 class="text-xl font-semibold mb-4 text-center md:text-left">Contact Form</h3>
         <form>
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
             <div>
-              <label for="first-name" class="block font-medium mb-2">First Name</label>
+              <label for="first-name" class="block font-medium mb-2 text-center md:text-left">First Name</label>
               <input type="text" id="first-name" name="first-name" class="w-full p-4 border border-gray-300 rounded" placeholder="First Name" />
             </div>
             <div>
-              <label for="last-name" class="block font-medium mb-2">Last Name</label>
+              <label for="last-name" class="block font-medium mb-2 text-center md:text-left">Last Name</label>
               <input type="text" id="last-name" name="last-name" class="w-full p-4 border border-gray-300 rounded" placeholder="Last Name" />
             </div>
           </div>
           <div class="mb-6">
-            <label for="email" class="block font-medium mb-2">Email</label>
+            <label for="email" class="block font-medium mb-2 text-center md:text-left">Email</label>
             <input type="email" id="email" name="email" class="w-full p-4 border border-gray-300 rounded" placeholder="Your Email" />
           </div>
           <div class="mb-6">
-            <label for="subject" class="block font-medium mb-2">Subject</label>
+            <label for="subject" class="block font-medium mb-2 text-center md:text-left">Subject</label>
             <input type="text" id="subject" name="subject" class="w-full p-4 border border-gray-300 rounded" placeholder="Subject" />
           </div>
           <div class="mb-6">
-            <label for="message" class="block font-medium mb-2">Message</label>
+            <label for="message" class="block font-medium mb-2 text-center md:text-left">Message</label>
             <textarea id="message" name="message" rows="5" class="w-full p-4 border border-gray-300 rounded" placeholder="Your Message"></textarea>
           </div>
-          <button type="submit" class="bg-green-500 text-white px-6 py-3 rounded hover:bg-green-400">Send Message</button>
+          <button type="submit" class="bg-green-500 text-white px-6 py-3 rounded hover:bg-green-400 w-full md:w-auto mx-auto">Send Message</button>
         </form>
-      </div>
-  
-      <!-- Right Side: Contact Details -->
-      <div class="bg-white p-6 rounded-lg shadow-md max-w-sm mx-auto mt-6 font-sans ">
-        <h3 class="text-xl font-semibold mb-2">Address</h3>
-        <p class="text-gray-700 mb-3">203 Fake St. Mountain View, San Francisco, California, USA</p>
-        <h3 class="text-xl font-semibold mb-2">Phone</h3>
-        <p class="text-gray-700 mb-3">+1 232 3235 324</p>
-        <h3 class="text-xl font-semibold mb-2">Email Address</h3>
-        <p class="text-gray-700">youremail@domain.com</p>
       </div>
     </div>
   </div>
+  
   
 
 <!-- Footer Section -->
 <footer class="bg-gray-900 text-white p-10 mt-20">
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
     <!-- About Section -->
-    <div class="ml-10">
+    <div class="ml-10 text-center md:text-left">
       <h3 class="text-xl font-semibold mb-4 font-sans">About</h3>
       <p class="text-gray-400 font-serif">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facere laudantium magnam voluptatum autem. Amet aliquid nesciunt veritatis aliquam.</p>
     </div>
     <!-- Features Section -->
-    <div class="ml-10">
+    <div class="ml-10 text-center md:text-left">
       <h3 class="text-xl font-semibold mb-4 font-sans">Features</h3>
       <ul class="text-gray-400 space-y-2 font-serif">
         <li>About Us</li>
@@ -466,9 +440,9 @@
       </ul>
     </div>
     <!-- Follow Us Section -->
-    <div class="ml-10">
+    <div class="ml-10 text-center md:text-left">
       <h3 class="text-xl font-semibold mb-4 font-sans">Follow Us</h3>
-      <div class="flex space-x-4">
+      <div class="flex justify-center md:justify-start space-x-4">
         <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
         <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
         <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
@@ -476,9 +450,9 @@
       </div>
     </div>
     <!-- Subscribe Newsletter Section -->
-    <div class="ml-10">
+    <div class="ml-10 text-center md:text-left">
       <h3 class="text-xl font-semibold mb-4 font-sans">Subscribe Newsletter</h3>
-      <div class="flex items-center border border-gray-500 rounded overflow-hidden">
+      <div class="flex items-center justify-center md:justify-start border border-gray-500 rounded overflow-hidden">
         <input type="email" placeholder="Enter Email" class="p-3 w-full text-gray-800 focus:outline-none">
         <button class="bg-green-500 text-white px-4 py-3 hover:bg-green-400">Send</button>
       </div>
@@ -491,8 +465,8 @@
 </footer>
 
 
+
 <script>
-  // Mobile menu toggle script
   const menuToggle = document.getElementById('menu-toggle');
   const mobileMenu = document.getElementById('mobile-menu');
 
